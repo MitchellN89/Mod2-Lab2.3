@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is a flexbox excersise</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is a flexbox excersise" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="[Your name]" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .background-1 {
+        background: #68b0ab;
+      }
+
+      .background-2 {
+        background: #8fc0a9;
+      }
+
+      .background-3 {
+        background: #c8d5b9;
+      }
+
+      .background-4 {
+        background: #faf3dd;
+      }
+
+      .m-20 {
+        margin: 20px;
+      }
+
+      .h-80 {
+        height: 80px;
+      }
+
+      .h-400 {
+        height: 400px;
+      }
+
+      .w-80 {
+        width: 80px;
+      }
+
+      .flex-container {
+        display: flex;
+      }
+
+      .flex-center {
+        justify-content: center;
+        align-items: center;
+      }
+
+      .flex-space-between {
+        justify-content: space-between;
+      }
+
+      .flex-wrap {
+        flex-wrap: wrap;
+      }
+
+      .flex-basis-item-50 {
+        flex-basis: 50%;
+      }
+
+      /* ======== MY STUFF BELOW ============================= */
+
+      .my-container {
+        display: flex;
+      }
+      .item-1 {
+        /* width: 200px; */
+        flex-shrink: 1;
+        order: 5;
+        height: 70px;
+        flex-basis: 250px;
+        background-color: #483d3f;
+      }
+
+      .item-2 {
+        /* width: 150px; */
+        order: 1;
+        flex-shrink: 2;
+        height: 112px;
+        flex-basis: 250px;
+        background-color: #058ed9;
+      }
+
+      .item-3 {
+        height: 220px;
+        order: 4;
+        flex-shrink: 1;
+        /* width: 170px; */
+        flex-basis: 250px;
+        flex-grow: 2;
+        background-color: #f4ebd9;
+      }
+
+      .item-4 {
+        height: 100px;
+        /* width: 70px; */
+        order: 2;
+        flex-shrink: 1;
+        flex-grow: 1;
+        flex-basis: 250px;
+        background-color: #a39a92;
+      }
+
+      .item-5 {
+        order: 3;
+        height: 130px;
+        flex-shrink: 2;
+        /* width: 130px; */
+        flex-basis: 250px;
+        background-color: #77685d;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h3>Basic flexbox</h3>
+
+      <div class="flex-container">
+        <div class="flex-item-1 background-1 h-80">Flexbox 1</div>
+        <div class="flex-item-2 background-2 h-80">Flexbox 2</div>
+        <div class="flex-item-3 background-3 h-80">Flexbox 3</div>
+        <div class="flex-item-4 background-4 h-80">Flexbox 4</div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Centering elements</h3>
+      <div class="m-20 flex-container flex-center h-400 background-4">
+        <div class="background-1 h-80 w-80">This is text within a div</div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Spacing elements on the opposite sides</h3>
+      <div class="flex-container flex-space-between">
+        <div class="h-80 background-1">I'm on the left</div>
+        <div class="h-80 background-2">I'm on the right</div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Wrapping items</h3>
+      <div class="flex-container flex-wrap">
+        <div class="flex-basis-item-50 h-80 background-1"></div>
+        <div class="flex-basis-item-50 h-80 background-2"></div>
+        <div class="flex-basis-item-50 h-80 background-3"></div>
+        <div class="flex-basis-item-50 h-80 background-4"></div>
+      </div>
+    </section>
+
+    <section style="width: 80%; margin: 100px auto 0;"">
+      <h3>Testing a few Flex features</h3>
+      <div class="my-container">
+        <div class="item-1">Item 1</div>
+        <div class="item-2">Item 2</div>
+        <div class="item-3">Item 3</div>
+        <div class="item-4">Item 4</div>
+        <div class="item-5">Item 5</div>
+      </div>
+    </section>
+  </body>
+</html>
